@@ -19,15 +19,15 @@ public class BowlingGame {
         for(int i = 0; i < len; i ++) {
             switch(bowlingCode.charAt(i)) {
                 case '|':
-                    if(t<9)
+                    if(t<10)
                         t += 1;
                     else {
                         //bowlingCode.charAt(i)
                         for(int j = 0; j < ewai[9]; j ++, i ++) {
-                            if(bowlingCode.charAt(i+j+2) == 'X')
+                            if(bowlingCode.charAt(i+j+1) == 'X')
                                 bottles[20+j] = 10;
                             else
-                                bottles[20+j] = bowlingCode.charAt(i+j+2) - '0';
+                                bottles[20+j] = bowlingCode.charAt(i+j+1) - '0';
                         }
                     }
                     break;
