@@ -23,11 +23,12 @@ public class BowlingGame {
                         t += 1;
                     else {
                         //bowlingCode.charAt(i)
+                        i ++;
                         for(int j = 0; j < ewai[9]; j ++, i ++) {
-                            if(bowlingCode.charAt(i+1) == 'X')
+                            if(bowlingCode.charAt(i) == 'X')
                                 bottles[20+j] = 10;
                             else
-                                bottles[20+j] = bowlingCode.charAt(i+1) - '0';
+                                bottles[20+j] = bowlingCode.charAt(i) - '0';
                         }
                     }
                     break;
@@ -66,7 +67,7 @@ public class BowlingGame {
                 scores += score[i];
                     //int k = 0;
                 for(int j = 0, k = 0; j < ewai[i]; k ++) {
-                    if(bottles[i*2+2+k] != 0) {
+                    if(bottles[i*2+2+k] != -1) {
                         scores += bottles[i*2+2+k];
                         j ++;
                     }
