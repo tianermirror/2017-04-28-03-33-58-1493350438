@@ -65,7 +65,7 @@ public class BowlingGame {
             else {
                 scores += score[i];
                     //int k = 0;
-                for(int j = 0, int k = 0; j < ewai[i]; k ++) {
+                for(int j = 0, k = 0; j < ewai[i]; k ++) {
                     if(bottles[i*2+2+k] != 0) {
                         scores += bottles[i*2+2+k];
                         j ++;
