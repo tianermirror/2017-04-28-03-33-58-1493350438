@@ -2,7 +2,7 @@ public class BowlingGame {
 
     public int getBowlingScore(String bowlingCode) {
         
-        int l = bowlingCode.length();//字符串长度
+        int len = bowlingCode.length();//字符串长度
         int scores = 0;
         int[] score = new int[12]; 
         int[] ewai = new int[10];
