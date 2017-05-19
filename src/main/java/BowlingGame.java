@@ -19,7 +19,7 @@ public class BowlingGame {
         for(int i = 0; i < len; i ++) {
             switch(bowlingCode.charAt(i)) {
                 case '|':
-                    if(t<10)
+                    if(t<9)
                         t += 1;
                     else {
                         //bowlingCode.charAt(i)
