@@ -24,10 +24,10 @@ public class BowlingGame {
                     else {
                         //bowlingCode.charAt(i)
                         for(int j = 0; j < ewai[9]; j ++, i ++) {
-                            if(bowlingCode.charAt(i+j+1) == 'X')
+                            if(bowlingCode.charAt(i+1) == 'X')
                                 bottles[20+j] = 10;
                             else
-                                bottles[20+j] = bowlingCode.charAt(i+j+1) - '0';
+                                bottles[20+j] = bowlingCode.charAt(i+1) - '0';
                         }
                     }
                     break;
